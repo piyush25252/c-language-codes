@@ -1,0 +1,815 @@
+HERE ARE THE PROGRAMS OF C PROGRAMMING LANGUAGE.
+
+*******************************************************************************/
+CODE 1
+#include <stdio.h>
+//write a c program to input and output of all data types.
+main()
+{
+    int a;
+    float b;
+    double c;
+    char d;
+   printf("size of int=%d bytes\n",sizeof(a));
+   printf("size of float=%d bytes\n",sizeof(b));
+   printf("size of double=%d bytes\n",sizeof(c));
+   printf("size of char=%d bytes\n",sizeof(d));
+}
+ 
+
+CODE 2
+
+//  c program to do all the airthmatic operations by entering the values of a and b. 
+
+#include<stdio.h>
+int main() {
+float a,b;
+printf("enter the value for a \n");
+scanf("%f",&a);
+
+printf("enter the value for b \n");
+scanf("%f",&b);
+ 
+ printf("sum of a and b is %f \n",a+b);
+ printf("differnce of a and b is %f\n",a-b);
+ printf("product of a and b is %f\n",a*b);
+ printf("division of a nad b is %f\n",a/b);
+
+return 0;
+
+}
+
+
+CODE 3
+
+#include <stdio.h>
+// write a c program to find a sum of two numbers.
+int main()
+{
+int a,b ;
+printf("enter the value of a");
+scanf("%d",&a);
+
+printf("enter the value of b");
+scanf("%d",&b);
+
+int sum = a+b;
+printf("sum of a and b is %d", sum);
+
+    return 0;
+}
+
+
+CODE 4
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    
+    int square;
+    square =a*a;
+    printf("the sqaure of a number is: %d",square);
+    return 0;
+    
+}    
+    
+CODE 5    
+    
+ 
+*******************************************************************************/
+// c program to calculate  circumference, diameter, area when radius is given.
+
+
+#include <stdio.h>
+
+int main()
+{
+float radius;
+float pie=3.14;
+printf("enter the radius of circle");
+scanf("%f",&radius);
+
+printf("diameter of circle %f \n",radius*2);
+printf("area of circle is %f \n",pie*radius*radius);
+printf("circumfernce of circle is %f \n",2*pie*radius);
+return 0;
+
+    }   
+
+
+CODE 6
+// c program to enter the length and breath of reactangle and find the perimeter.
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the value for length");
+    scanf("%d",&a);
+    
+    printf("enter the value for breath");
+    scanf("%d",&b);
+    
+    int peri;
+    peri = 2*a+2*b;
+    printf("primeter of a rectangle of side %d",peri);
+    
+
+CODE 7
+
+*******************************************************************************/
+//c program to hav the area of rectangle when length and breath is given
+
+#include<stdio.h>
+int main()
+{
+    float a,b;
+    printf("enter the value of length");
+    scanf("%f",&a);
+    
+    printf("enter the value of breath");
+    scanf("%f",&b);
+    
+    printf("area of reactangle of length%f",a*b);
+    
+    return 0;
+    
+ }   
+    
+ 
+
+CODE 8
+
+
+#include<stdio.h>
+int main()
+{
+    float cm;
+    printf("enter any value for centimetre");
+    scanf("%f",&cm);
+    
+    float m,km;
+    m=cm/100;
+    km=cm/100000;
+    printf("metre conversion for cm is %f\n",m);
+    printf("kilometre conversion for cm is %f",km);  
+    return 0;
+}
+
+
+CODE 9
+
+
+// C PROGRAM TO PRINT THE POWERS OF A NUMBER .
+
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,power;
+printf("enter the no of which u want power");
+scanf("%f",&a);
+printf("enter the no upto which u want power");
+scanf("%f",&b);
+
+power=pow(a,b);
+printf("power of your desirable no. is %f",power);
+return 0;
+}
+
+   
+ CODE10
+
+//to find out the square root of a number.
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float a;
+    printf("enter the value of number of which you want to find out square root");
+    scanf("%f",&a);
+    float b;
+    b=pow(a,0.5);
+    printf("the square of a number is%f",b);
+    return 0;
+ 
+}
+
+CODE 11
+
+*******************************************************************************/
+
+//simple interest for certain amount of money.
+#include <stdio.h>
+
+int main(){
+int principal,rate,timeperiod;
+
+printf("enter the principal \n");
+scanf("%d",&principal);
+
+printf("enter the rate \n");
+scanf("%d",&rate);
+
+
+
+printf("enter the timeperiod \n");
+scanf("%d",&timeperiod);
+
+int prod;
+prod=(principal*rate*timeperiod)/100;
+printf("simple interest is%d",prod);
+return 0;
+
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+   int a,b;
+   scanf("%d%d",&a,&b);
+   if (a>b)
+   printf("%d",a);
+   else 
+   printf("%d",b);
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main()
+{
+ int a,b,c;
+ scanf("%d%d%d",&a,&b,&c);
+ if(a>b&&a>c)
+ printf("%d",a);
+ else if (b>a&&b>c)
+ printf("%d",b);
+ else 
+ printf("%d",c);
+   return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main()
+{
+ int a,b,c;
+ scanf("%d%d%d",&a,&b,&c);
+ ((a>b&&a>c)?printf("%d",a):(b>c&&b>a)?printf("%d",b):printf("%d",c));
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+ int b;
+ scanf("%d",&b);
+((b%2==0)?printf("even"):printf("odd"));
+}
+
+
+
+#include <stdio.h>
+
+int main()
+{
+ int n;
+ scanf("%d",&n);
+((n%4==0||n%400==0)?printf("leap year"):("not a leap year"));
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+ char n;
+ scanf("%c",&n);
+((n>=65)&&(n<=90)||(n>=97&&n<=122))?printf("alphabet"):printf("not an alphabet");
+}
+
+
+
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    if (n>0)
+    printf("positive");
+    else if(n<0)
+    printf("negative");
+    else
+    printf("zero");
+    return 0;
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+   scanf("%d",&n);
+   if ((n%5==0)&&(n%11==0))
+   printf("it is divisible by 5 and 11");
+   else 
+   printf("not divisible ");
+    return 0;
+}
+
+
+
+#include <stdio.h>
+int main(){
+    int n;
+   scanf("%d",&n);
+   if (n%2==0)
+   printf("even");
+   else 
+   printf("odd");
+    return 0;
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+   scanf("%d",&n);
+if (n%4==0||n%400==0)
+printf("leap year");
+else if (n%100!=0)
+printf(" not leap year");
+else 
+printf("not a leap year");
+    return 0;
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+   scanf("%d",&n);
+if (n>=65&&n<=90)
+printf("alphabet");
+else if (n<=97&&n>=122)
+printf("alphabet");
+else 
+printf("not an alphabet");
+    return 0;
+}
+
+#include <stdio.h>
+int main(){
+    char n;
+   scanf("%c",&n);
+if (n=='a'||n=='e'||n=='i'||n=='o'||n=='u'||n=='A'||n=='E'||n=='I'||n=='O'||n=='U')
+printf("vowel");
+else 
+printf("consonant");
+
+    return 0;
+}
+
+#include <stdio.h>
+int main(){
+    char n;
+   scanf("%c",&n);
+if (n=='a'||n=='e'||n=='i'||n=='o'||n=='u'||n=='A'||n=='E'||n=='I'||n=='O'||n=='U'){
+
+printf("vowel");}
+else if (((n<=65&&n>=90)&&(n!='a'||n!='e'||n!='i'||n!='o'||n!='u'||n!='A'||n!='E'||n!='I'||n!='O'||n!='U'))||(n<=97&&n>=122)&&(n!='a'||n!='e'||n!='i'||n!='o'||n!='u'||n!='A'||n!='E'||n!='I'||n!='O'||n!='U')))
+printf("consonant");
+else if (n>=48&&n<=57)
+printf("number");
+else 
+printf("character");
+    return 0;
+}
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    switch(n){
+        case 1:printf("sunday");
+        break;
+        case 2:printf("monday");
+        break;
+        case 3:printf("tuesday");
+        break;
+        case 4:printf("wednesday");
+        break;
+        case 5:printf("thursday");
+        break;
+        case 6:printf("friday");
+        break;
+        case 7:printf("saturday");
+        break;
+    }
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    switch(n){
+        case 1:printf("31");
+        break;
+        case 3:printf("31");
+        break;
+        case 5:printf("31");
+        break;
+        case 7:printf("31");
+        break;
+        case 8:printf("31");
+        break;
+        case 10:printf("31");
+        break;
+        case 12:printf("31");
+        break;
+        case 2:printf("28");
+        break;
+        case 4:printf("30");
+        break;
+        case 6:printf("30");
+        break;
+        case 9:printf("30");
+        break;
+        case 11:printf("30");
+        break;
+    }}
+
+
+#include <stdio.h>
+int main(){
+    int a,b,n;
+    scanf("%d%d",&a,&b);
+    n=a>b;
+    switch(n){
+      case 1:printf("%d",a);
+      break;
+      case 0:printf("%d",b);
+      break;
+    }}
+
+
+#include <stdio.h>
+int main(){
+    int a,n;
+    scanf("%d",&a);
+    n=a%2==0;
+    switch(n){
+      case 1:printf("even");
+      break;
+      case 0:printf("odd");
+      break;
+    }}
+
+#include <stdio.h>
+int main(){
+    int a,n;
+    scanf("%d",&a);
+    n=a>0;
+    switch(n){
+      case 1:printf("positive");
+      break;
+      case 0:printf("negative");
+      break;
+      default:printf("zero");
+    }}
+
+
+#include <stdio.h>
+int main(){
+    int a,b,n;
+    printf("enter 1 for addition,,,, 2 for subtraction,,,,3 for multiplication,,,,,4 for division,,,,,,,,5 for mod");
+    scanf("%d%d%d",&a,&b,&n);
+        switch(n){
+      case 1:printf("%d",a+b);
+      break;
+      case 2:printf("%d",a-b);
+      break;
+      case 3:printf("%d",a*b);
+      break;
+      case 4:printf("%d",a/b);
+      break;
+      case 5:printf("%d",a%b);
+      break;
+      default:printf("zero");
+    }}
+
+#include <stdio.h>
+int main(){
+    char n;
+    printf("enter alphabet\n");
+        scanf("%c",&n);
+
+    switch(n){
+        case 'a':printf("vowel");
+        break;
+        case 'e':printf("vowel");
+        break;
+        case 'i':printf("vowel");
+        break;
+        case 'o':printf("vowel");
+        break;
+        case 'u':printf("vowel");
+        break;
+        case 'A':printf("vowel");
+        break;
+        case 'E':printf("vowel");
+        break;
+        case 'I':printf("vowel");
+        break;
+        case 'O':printf("vowel");
+        break;
+        case 'U':printf("vowel");
+        break;
+
+        default:
+        printf("constant");
+        break;
+    }}
+WAP to check whether a number is perfect or not
+
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int n;
+  scanf("%d",&n);
+  int d=n;
+
+ 
+int sum=0;
+ 
+     
+    
+ for (int i=1;i<=n/2;i++){
+     if (n%i==0)
+     sum=sum+i;  
+     else 
+     continue;
+ }
+
+ if (sum==d)
+  printf("yes");
+  else 
+  printf("no");
+}
+
+wap to swap two numbers by bitwise operator
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("%d %d",a,b);
+
+    return 0;
+}
+
+armstrong hai ye 
+
+
+#include <stdio.h>
+int main() {
+    int num, originalNum, remainder, result = 0;
+    
+    scanf("%d", &num);
+    originalNum = num;
+
+    while (originalNum != 0) {
+       
+        remainder = originalNum % 10;
+        
+       result += remainder * remainder * remainder;
+        
+      
+       originalNum /= 10;
+    }
+
+    if (result == num)
+        printf("%d is an Armstrong number.", num);
+    else
+        printf("%d is not an Armstrong number.", num);
+
+    return 0;
+}
+
+
+strong number
+
+#include<stdio.h>
+int main(){
+   int n,i;
+   int fact,rem;
+   
+   scanf("%d",&n);
+   
+   int sum = 0;
+   int temp = n;
+   while(n){
+      i = 1,fact = 1;
+      rem = n % 10;
+      while(i <= rem){
+         fact = fact * i;
+         i++;
+      }
+      sum = sum + fact;
+      n = n / 10;
+   }
+   if(sum == temp)
+      printf("is strong");
+   else
+      printf("not strong");
+   return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main()
+
+{
+   int n;
+   scanf("%d",&n);
+   int flag=0;
+   if (n==2)
+   falf=1;
+   for(int i=2;i<=n/2;i++){
+       if (n%i!=0)
+       flag=1;
+       else 
+       falg=0;
+   }
+   if (flag==0)
+   printf("not prime");
+   else 
+   printf("prime ");
+
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main() {
+    // Write C code here
+int n;
+   scanf("%d",&n);
+   int a[n];int b[n];
+   for (int i=0;i<n;i++){
+       scanf("%d",&a[i]);}
+   for (int i=0;i<n;i++){
+       int s=a[i];
+   int flag=0;
+   if (s==2)
+   flag=1;
+   for(int i=2;i<=s/2;i++){
+       if (s%i!=0)
+       flag=1;
+       else 
+       flag=0;
+   }
+   if (flag==0)
+  {
+     int k=0;
+     b[k]=s;
+     k++;
+     }
+   else 
+   continue;
+}
+for (int i=0;i<n;i++){
+    printf("%d ",b[i]);
+}
+    return 0;
+}
+    
+
+
+
+
+// c program to delete an element froma n array at a specific position.
+#include <stdio.h>
+int main()
+{
+   int n;
+   scanf("%d",&n);
+   int a[n];
+   for (int i=0;i<n;i++){
+       scanf("%d",&a[i]);
+   }
+   int pos;
+   scanf("%d",&pos);
+  for (int i=pos;i<n-1;i++)
+      a[i]=a[i+1];
+      n--;
+  
+   
+   for (int i=0;i<n;i++){
+       printf("%d",a[i]);
+   }
+   
+    return 0;
+}
+
+
+
+// c program to count the frequency of  each element in array
+#include <stdio.h>
+int main()
+{
+   int n;
+   scanf("%d",&n);
+   int array_input[n];
+   for (int i=0;i<n;i++){
+       scanf("%d",&array_input[i]);
+   }
+   int frequency [n];    
+    int visited = -1;    
+        
+    for(int i = 0; i < n; i++){    
+        int count_var = 1;    
+        for(int j = i+1; j < n; j++){    
+            if(array_input[i] == array_input[j]){    
+                count_var++;     
+                frequency [j] = visited;    
+            }    
+        }    
+        if(frequency [i] != visited)    
+            frequency [i] = count_var;    
+    }    
+        
+    printf("---------------------\n");    
+    printf(" Element | frequency of element\n");    
+    printf("---------------------\n");    
+    for(int i = 0; i < n; i++){    
+        if(frequency [i] != visited){    
+            printf("    %d", array_input[i]);    
+            printf("    |  ");    
+            printf("  %d\n", frequency [i]);    
+        }    
+    }
+        
+    printf("---------------------\n");    
+    return 0;    
+   
+    return 0;
+}
+
+
+
+
+// c program to find the different element in array
+#include <stdio.h>
+int main()
+{
+   int n;
+   scanf("%d",&n);
+  int a[n];
+  for (int i=0;i<n;i++){
+      scanf("%d",&a[i]);
+  } int e;int v=-1;
+  for (int i=0;i<n;i++){
+      e=a[i];
+      for (int j=i+1;j<n;j++){
+          if (e==a[j])
+          {
+              a[i]=-1;
+              break;
+          }
+          else 
+          continue;
+      }
+     
+  }
+  for (int i=0;i<n;i++){
+      if (a[i]!=-1)
+      printf("%d",a[i]);
+      else 
+      continue;
+  }
+}
